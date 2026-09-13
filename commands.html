@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>指令｜夥伴寶可夢</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="favicon.png">
+</head>
+<body>
+<header class="site-header">
+  <div class="brand">
+    <h1>夥伴寶可夢</h1>
+    <p>海兔俠的 Twitch　一人一隻，用聊天室養成</p>
+  </div>
+  <nav class="nav"><a href="index.html">說明</a><a href="commands.html" class="here">指令</a><a href="types.html">屬性</a><a href="dex.html">圖鑑</a><a href="eggs.html">蛋</a><a href="shop.html">商店</a><a href="badges.html">徽章</a><a href="gyms.html">道館</a><a href="battle.html">對戰</a><a href="calc.html">計算器</a><a href="changelog.html">更新</a></nav>
+</header>
+<main class="wrap">
+
+<h2>觀眾指令</h2>
+<p>指定別人一律用 login。聊天室沒有粗體或顏色，提示寫在點數獎勵說明最穩。</p>
+<table>
+<tr><th>怎麼用</th><th>做什麼</th></tr>
+<tr><td>點數「迎頭一擊」</td><td>本場簽到，拿沙子</td></tr>
+<tr><td>點數「溫泉婆婆的蛋」</td><td>領蛋（名稱以頻道為準）</td></tr>
+<tr><td>點數「兌換星星沙子」</td><td>點數換沙子</td></tr>
+<tr><td>點數「青草滑梯」</td><td>夥伴在畫面底下散步</td></tr>
+<tr><td><span class="cmd">!沙子</span></td><td>查沙子（可加對方 login）</td></tr>
+<tr><td><span class="cmd">!夥伴</span></td><td>查蛋或夥伴（可加對方 login）</td></tr>
+<tr><td><span class="cmd">!炫耀</span></td><td>公開秀，畫面出卡片</td></tr>
+<tr><td><span class="cmd">!放生 確認</span></td><td>放掉身上那隻</td></tr>
+<tr><td><span class="cmd">!商店</span></td><td>看養成商品與當下價錢</td></tr>
+<tr><td><span class="cmd">!購買 …</span></td><td>用沙子買（見商店頁）</td></tr>
+<tr><td><span class="cmd">!飼育屋</span></td><td>教學</td></tr>
+<tr><td><span class="cmd">!飼育屋 資訊</span></td><td>看格子（可加對方 login）</td></tr>
+<tr><td><span class="cmd">!飼育屋 1</span></td><td>跟第 1 格交換（2、3 同理）</td></tr>
+<tr><td><span class="cmd">!炫耀飼育屋</span></td><td>畫面出雞舍</td></tr>
+<tr><td><span class="cmd">!捐沙 login 數量</span></td><td>轉帳沙子</td></tr>
+<tr><td><span class="cmd">!對戰 login 金額</span></td><td>邀請對戰</td></tr>
+<tr><td><span class="cmd">!對戰 結束</span></td><td>取消對戰邀請</td></tr>
+<tr><td><span class="cmd">!交換 login</span></td><td>邀請交換</td></tr>
+<tr><td><span class="cmd">!交換 結束</span></td><td>取消交換邀請</td></tr>
+<tr><td><span class="cmd">!道館資訊</span></td><td>看當前道館（可加對方 login）</td></tr>
+<tr><td><span class="cmd">!道館</span></td><td>挑戰當前那隻</td></tr>
+<tr><td><span class="cmd">!徽章</span></td><td>列出贏過的屬性與次數</td></tr>
+<tr><td><span class="cmd">!炫耀徽章</span></td><td>畫面出徽章盒</td></tr>
+<tr><td><span class="cmd">!屬性 火</span></td><td>速查該屬性打誰 2／0.5、被誰打 2／0.5</td></tr>
+<tr><td><span class="cmd">!維基</span></td><td>聊天回本站網址</td></tr>
+</table>
+
+<h2>管理員</h2>
+<p>只有台主和管理員能用。指定人都用 login。路人打會被擋。</p>
+<details class="spoiler">
+<summary>展開管理員指令</summary>
+<table>
+<tr><th>指令</th><th>效果</th></tr>
+<tr><td><span class="cmd">!補簽 login 連續場數 0或1或2</span></td><td>修簽到。0 只改連續；1 再給該檔沙子；2 再加先制 1000。三種都會占用這場迎頭一擊</td></tr>
+<tr><td><span class="cmd">!管理員給沙 login 數量</span></td><td>設成該數字（不是加減）。0＝清零。沒帳可新建</td></tr>
+<tr><td><span class="cmd">!管理員除蛋 login</span></td><td>只清蛋</td></tr>
+<tr><td><span class="cmd">!管理員給蛋 login</span></td><td>給蛋；已有夥伴會失敗</td></tr>
+<tr><td><span class="cmd">!管理員給夥伴 login</span></td><td>直接換成孵好的。只打 login＝隨機一隻；可再指定品種與是否異色</td></tr>
+<tr><td><span class="cmd">!管理員移除夥伴 login</span></td><td>清掉蛋或夥伴</td></tr>
+<tr><td><span class="cmd">!管理員道館刷新</span></td><td>可加 login。重抽當前道館。不改冷卻、徽章、沙子</td></tr>
+<tr><td><span class="cmd">!管理員新增徽章 login</span></td><td>可再寫屬性與次數</td></tr>
+<tr><td><span class="cmd">!管理員移除徽章 login</span></td><td>可再寫屬性；沒寫＝全清</td></tr>
+</table>
+<p>管理員清蛋或夥伴，沒有放生那種告別畫面。</p>
+</details>
+
+</main>
+<footer class="footer">數字（孵化時間、點數價、冷卻）以當次直播與頻道獎勵為準。這是說明站，不會查你現在帶哪一隻。</footer>
+<script src="site.js"></script>
+</body>
+</html>

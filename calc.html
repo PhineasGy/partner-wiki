@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>計算器｜夥伴寶可夢</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="favicon.png">
+</head>
+<body>
+<header class="site-header">
+  <div class="brand">
+    <h1>夥伴寶可夢</h1>
+    <p>海兔俠的 Twitch　一人一隻，用聊天室養成</p>
+  </div>
+  <nav class="nav"><a href="index.html">說明</a><a href="commands.html">指令</a><a href="types.html">屬性</a><a href="dex.html">圖鑑</a><a href="eggs.html">蛋</a><a href="shop.html">商店</a><a href="badges.html">徽章</a><a href="gyms.html">道館</a><a href="battle.html">對戰</a><a href="calc.html" class="here">計算器</a><a href="changelog.html">更新</a></nav>
+</header>
+<main class="wrap">
+
+<h2>對戰模擬</h2>
+<p>跟直播同一套規則：各出一個自己的屬性；打到對方身上每一個屬性都要算進去。剋 2、普通 1、抗和免疫都是 0.5。倍數高的贏，相同則平手。</p>
+<div class="note">這裡只模擬勝負和倍率，<strong>不算沙子、不計算賭注</strong>。實際對戰仍要在聊天室雙方喊同一金額。</div>
+<div class="calc">
+
+<div class="side">
+<h3>左側</h3>
+<p>選 1～4 個屬性（本體加貼紙）。</p>
+<div class="picks" id="sideA"><label><input type="checkbox" value="一般"> 一般</label><label><input type="checkbox" value="格鬥"> 格鬥</label><label><input type="checkbox" value="飛行"> 飛行</label><label><input type="checkbox" value="毒"> 毒</label><label><input type="checkbox" value="地面"> 地面</label><label><input type="checkbox" value="岩石"> 岩石</label><label><input type="checkbox" value="蟲"> 蟲</label><label><input type="checkbox" value="幽靈"> 幽靈</label><label><input type="checkbox" value="鋼"> 鋼</label><label><input type="checkbox" value="火"> 火</label><label><input type="checkbox" value="水"> 水</label><label><input type="checkbox" value="草"> 草</label><label><input type="checkbox" value="電"> 電</label><label><input type="checkbox" value="超能力"> 超能力</label><label><input type="checkbox" value="冰"> 冰</label><label><input type="checkbox" value="龍"> 龍</label><label><input type="checkbox" value="惡"> 惡</label><label><input type="checkbox" value="妖精"> 妖精</label></div>
+<p>這次要出的屬性</p>
+<select class="move" id="moveA"></select>
+</div>
+
+
+<div class="side">
+<h3>右側</h3>
+<p>選 1～4 個屬性（本體加貼紙）。</p>
+<div class="picks" id="sideB"><label><input type="checkbox" value="一般"> 一般</label><label><input type="checkbox" value="格鬥"> 格鬥</label><label><input type="checkbox" value="飛行"> 飛行</label><label><input type="checkbox" value="毒"> 毒</label><label><input type="checkbox" value="地面"> 地面</label><label><input type="checkbox" value="岩石"> 岩石</label><label><input type="checkbox" value="蟲"> 蟲</label><label><input type="checkbox" value="幽靈"> 幽靈</label><label><input type="checkbox" value="鋼"> 鋼</label><label><input type="checkbox" value="火"> 火</label><label><input type="checkbox" value="水"> 水</label><label><input type="checkbox" value="草"> 草</label><label><input type="checkbox" value="電"> 電</label><label><input type="checkbox" value="超能力"> 超能力</label><label><input type="checkbox" value="冰"> 冰</label><label><input type="checkbox" value="龍"> 龍</label><label><input type="checkbox" value="惡"> 惡</label><label><input type="checkbox" value="妖精"> 妖精</label></div>
+<p>這次要出的屬性</p>
+<select class="move" id="moveB"></select>
+</div>
+
+</div>
+<div class="actions">
+<button type="button" id="calcGo">模擬一次</button>
+</div>
+<div class="result" id="calcOut">兩邊選好屬性後按「模擬一次」。</div>
+
+</main>
+<footer class="footer">數字（孵化時間、點數價、冷卻）以當次直播與頻道獎勵為準。這是說明站，不會查你現在帶哪一隻。</footer>
+<script src="site.js"></script>
+</body>
+</html>

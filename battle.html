@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>對戰｜夥伴寶可夢</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="favicon.png">
+</head>
+<body>
+<header class="site-header">
+  <div class="brand">
+    <h1>夥伴寶可夢</h1>
+    <p>海兔俠的 Twitch　一人一隻，用聊天室養成</p>
+  </div>
+  <nav class="nav"><a href="index.html">說明</a><a href="commands.html">指令</a><a href="types.html">屬性</a><a href="dex.html">圖鑑</a><a href="eggs.html">蛋</a><a href="shop.html">商店</a><a href="badges.html">徽章</a><a href="gyms.html">道館</a><a href="battle.html" class="here">對戰</a><a href="calc.html">計算器</a><a href="changelog.html">更新</a></nav>
+</header>
+<main class="wrap">
+
+<h2>怎麼對戰</h2>
+<p>兩邊都要已孵夥伴、都要付得起賭注。雙方喊<strong>同一金額</strong>才開打，沒有接受指令。可以加注或改小去對齊。</p>
+<p>相關指令：</p>
+<table>
+<tr><th>指令</th><th>做什麼</th></tr>
+<tr><td><span class="cmd">!對戰 login 金額</span></td><td>邀請對方。兩邊喊到同一個數字才開打</td></tr>
+<tr><td><span class="cmd">!對戰 結束</span></td><td>取消邀請</td></tr>
+<tr><td><span class="cmd">!屬性 火</span></td><td>速查該屬性打誰 2／0.5、被誰打 2／0.5</td></tr>
+</table>
+<p>邀請中不能購買、放生、捐沙、炫耀、道館、飼育屋換格、再開對戰或交換。查詢和迎頭一擊可以。逾時沒對齊會自動取消。</p>
+<p>畫面跟道館很像：右側長面板、上下兩個轉輪。<strong>上面是對手，下面是最後對齊的人。</strong>中間會寫賭注。各隨機出一個自己的屬性。</p>
+<figure class="demo"><img src="images/guide/showcase-battle.png" alt="示意：對戰雙轉輪（上＝對手，下＝你）。中間是賭注。"><figcaption>示意：對戰雙轉輪（上＝對手，下＝你）。中間是賭注。</figcaption></figure>
+<p>剋＝2、普通＝1、抗和免疫都是 0.5（本頻道沒有 0）。倍數高的贏，贏的人拿走對方整筆賭注，倍數差夠大另有完勝加成。平手退注。</p>
+<p>想先試相剋、不算沙子，請用「計算器」。</p>
+
+</main>
+<footer class="footer">數字（孵化時間、點數價、冷卻）以當次直播與頻道獎勵為準。這是說明站，不會查你現在帶哪一隻。</footer>
+<script src="site.js"></script>
+</body>
+</html>

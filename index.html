@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>說明｜夥伴寶可夢</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="favicon.png">
+</head>
+<body>
+<header class="site-header">
+  <div class="brand">
+    <h1>夥伴寶可夢</h1>
+    <p>海兔俠的 Twitch　一人一隻，用聊天室養成</p>
+  </div>
+  <nav class="nav"><a href="index.html" class="here">說明</a><a href="commands.html">指令</a><a href="types.html">屬性</a><a href="dex.html">圖鑑</a><a href="eggs.html">蛋</a><a href="shop.html">商店</a><a href="badges.html">徽章</a><a href="gyms.html">道館</a><a href="battle.html">對戰</a><a href="calc.html">計算器</a><a href="changelog.html">更新</a></nav>
+</header>
+<main class="wrap">
+
+<h2>這是什麼</h2>
+<p>開台時，觀眾可以用忠誠點數和聊天指令養一隻夥伴寶可夢：領蛋、孵化、改名、貼紙、對戰、交換、打道館、炫耀畫面，以及讓夥伴在畫面底下散步。</p>
+<p><strong>身上同時一隻。</strong>要換可以放生、跟人交換，或先寄放進飼育屋再領新蛋。</p>
+<div class="note">兩套東西不要混：<strong>忠誠點數</strong>是 Twitch 的點，用來點獎勵按鈕；<strong>星星沙子</strong>是本頻道帳本裡的貨幣，用來買商店物品、當對戰賭注。沒簽到過，多數功能會失敗；點數獎勵失敗會退點。</div>
+<p>指定別人請用 <strong>login</strong>（小寫帳號，點他名字看 Username），不要用顯示名。</p>
+
+<h2>怎麼開始</h2>
+<ol>
+<li>開台後點忠誠點數 <strong>迎頭一擊</strong>。每一場直播限一次，給的是星星沙子。同一場再點會退點。</li>
+<li>點 <strong>溫泉婆婆的蛋</strong>（名稱以頻道為準）領蛋。已有蛋或已有夥伴再點會退點。</li>
+<li>蛋過一段時間會自己孵（人不在也算）。聊天不公布是誰；打 <span class="cmd">!夥伴</span> 才看得到品種。</li>
+<li>打 <span class="cmd">!炫耀</span> 秀在直播畫面。</li>
+</ol>
+<div class="note">孵化要多久、領蛋要多少點，以當次直播與頻道獎勵為準。</div>
+
+<h2>簽到與沙子</h2>
+<p><strong>沒有</strong> <span class="cmd">!迎頭一擊</span> 指令，只靠點數按鈕。</p>
+<p>連續依<strong>場次</strong>（你沒開台不會斷），不是日曆天：</p>
+<table>
+<tr><th>連續第幾場</th><th>沙子</th></tr>
+<tr><td>1</td><td>100</td></tr>
+<tr><td>2</td><td>200</td></tr>
+<tr><td>3</td><td>300</td></tr>
+<tr><td>4</td><td>400</td></tr>
+<tr><td>5 以後</td><td>500</td></tr>
+</table>
+<p>開台後 30 分鐘內（含第 30 分）再額外 +1000（先制）。閃退再開台會算新的一場，連續可能斷，請台主或管理員補簽。</p>
+<p>查詢：<span class="cmd">!沙子</span>　<span class="cmd">!沙子 對方login</span></p>
+
+<h2>蛋與孵化</h2>
+<p>領到的蛋會抽一次顏色或花紋（有花紋就不會再是別的顏色），之後炫耀不會變。孵出來是圖鑑裡隨機一隻，有機率異色。屬性在孵化當下定下來，之後圖鑑怎麼改都不會改你這隻。</p>
+<p>異色聊天只會說好像閃了一下，不公布品種。</p>
+
+<h2>養成</h2>
+<h3>炫耀／放生</h3>
+<p><span class="cmd">!炫耀</span>：聊天公開一句，畫面右下出現卡片。</p>
+<p><span class="cmd">!放生 確認</span>：真的放掉（只打放生會提示要加確認）。之後要等一會兒才能再領蛋；冷卻中點蛋會退點。</p>
+<p>放生或交換不會立刻拿掉正在青草滑梯上走的圖，那隻會走完。</p>
+
+<h3>飼育屋</h3>
+<p>已孵的夥伴可以先寄放，再領新蛋。蛋不能寄。預設一格，可以買飼育屋 VIP 加格（最多三格）。</p>
+<p><span class="cmd">!飼育屋</span> 教學　<span class="cmd">!飼育屋 資訊</span>　<span class="cmd">!飼育屋 1</span> 跟第 1 格交換　<span class="cmd">!炫耀飼育屋</span> 看雞舍</p>
+<p>對戰、交換、畫面播放、滑梯進行中不能換格；查詢可以。</p>
+
+<h3>捐沙</h3>
+<p><span class="cmd">!捐沙 對方login 500</span>。對方也要在系統裡。不能捐自己。邀請對戰或交換時不能捐。</p>
+
+<h2>對戰</h2>
+<p>兩邊都要已孵夥伴、都要付得起賭注。雙方喊<strong>同一金額</strong>才開打，沒有接受指令。可以加注或改小去對齊。</p>
+<p><span class="cmd">!對戰 對方login 100</span>　<span class="cmd">!對戰 結束</span></p>
+<p>各隨機出一個自己的屬性（本體或貼紙）。剋＝2、普通＝1、抗和免疫都是 0.5（本頻道沒有 0）。倍數高的贏，贏的人拿走對方整筆賭注，倍數差夠大另有完勝加成。平手退注。</p>
+<p>邀請中不能購買、放生、捐沙、炫耀、道館、飼育屋換格、再開對戰或交換。查詢類指令和迎頭一擊可以。逾時沒對齊會自動取消。</p>
+<p>想先算相剋，用上面的「計算器」，或聊天 <span class="cmd">!屬性 火</span>。</p>
+
+<h2>交換</h2>
+<p>可換已孵夥伴或蛋，不收沙子。雙方在時限內互打對方 login 才換。蛋的剩餘時間和顏色跟著那顆蛋走。</p>
+<p><span class="cmd">!交換 對方login</span>　<span class="cmd">!交換 結束</span></p>
+
+<h2>道館與徽章</h2>
+<p>每人一條路線，跟你帶哪隻無關。打輸停在同一間同一隻；打贏才換下一間（有機會再抽到同一間）。放生、換寵、貼紙、交換都不改當前道館。</p>
+<p><span class="cmd">!道館資訊</span> 看當前館主與派出哪隻（自己還沒有會先抽一間；查別人不會幫對方抽）。<span class="cmd">!道館</span> 挑戰。打贏給沙子和該屬性徽章；打輸沒有沙子，冷卻一樣算。</p>
+<p>正式開台可能要求正在直播才能打，以當下為準。</p>
+<p class="note warn">各館派出名單是劇透，請到「道館」頁自己展開。</p>
+
+<h2>青草滑梯</h2>
+<p>點忠誠點數「青草滑梯」。要已孵夥伴。聊天會先說出去了，約 3 秒後出現在畫面最底下，走走停停，時間到淡掉。</p>
+<p>全場同時能走的隻數有上限；同一人一次只能遛一隻。還在走再點會退點。失敗本來就會退點，不必另設獎勵冷卻。</p>
+
+<h2>畫面會出什麼</h2>
+<p>都在直播畫面上，沒有只給你看的私訊版。</p>
+<table>
+<tr><th>時機</th><th>大概長什麼</th></tr>
+<tr><td>!炫耀</td><td>右下大卡：主人、圖、名、屬性、貼紙</td></tr>
+<tr><td>!炫耀徽章</td><td>徽章盒</td></tr>
+<tr><td>!炫耀飼育屋</td><td>雞舍三格</td></tr>
+<tr><td>!放生 確認</td><td>右下卡，圖縮小</td></tr>
+<tr><td>!道館／!對戰</td><td>右側長面板、雙轉輪</td></tr>
+<tr><td>!交換</td><td>兩邊對穿交換</td></tr>
+<tr><td>青草滑梯</td><td>最底下整排走路</td></tr>
+</table>
+
+<h2>常見狀況</h2>
+<ul>
+<li>點蛋失敗、點數閃一下回來：已有蛋、已有夥伴，或放生冷卻。正常退款。</li>
+<li>孵化沒講是哪隻：故意的。打 <span class="cmd">!夥伴</span>。</li>
+<li>邀請中什麼都不能買：<span class="cmd">!對戰 結束</span> 或 <span class="cmd">!交換 結束</span>，或等逾時。</li>
+<li>對戰或捐沙被拒「顯示名重複」：改用 login。</li>
+<li>沒沙、不在系統：先迎頭一擊。</li>
+<li>道館一直同一隻：上次打輸了。打贏才換。</li>
+<li>滑梯點了沒圖：先等 3 秒；或沒孵、已在遛、全場滿。</li>
+<li><span class="cmd">!屬性 超能</span> 會失敗：要寫「超能力」。本頻道免疫也是 0.5。</li>
+</ul>
+
+</main>
+<footer class="footer">數字（孵化時間、點數價、冷卻）以當次直播與頻道獎勵為準。這是說明站，不會查你現在帶哪一隻。</footer>
+<script src="site.js"></script>
+</body>
+</html>
