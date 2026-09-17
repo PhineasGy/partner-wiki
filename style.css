@@ -127,6 +127,15 @@ th { background: #efe0c8; color: var(--brown); }
   padding: 10px 8px 12px;
   text-align: center;
 }
+.mon .tag {
+  display: inline-block;
+  margin-top: 6px;
+  padding: 1px 8px;
+  border-radius: 999px;
+  background: #efe0c8;
+  color: var(--brown);
+  font-size: .72rem;
+}
 .mon img, .egg img {
   width: 96px;
   height: 96px;
